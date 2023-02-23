@@ -31,3 +31,24 @@ To add a new article to the database, send a POST request to http://127.0.0.1:80
     "content": "ARTICLE_CONTENTS"
 }
 Note that you should replace ARTICLE_ID, ARTICLE_TITLE, and ARTICLE_CONTENTS with the actual values for the article you want to add. The id field should be a unique identifier for the article, as no built-in verification is implemented.
+
+
+
+Answer to Additional Questions:
+
+What is the bottleneck of the current design?
+
+-The current design has bottlenecks in both ingestion and search operations. In terms of ingestion, parsing and extracting data from large XML files can be time inefficient. In terms of search, performing a full-text search on a large database can also be resource intensive.
+
+How could the ingest performance be improved?
+
+-If the volume of data is very large, platforms such as Apache Spark will significantly improve performance. 
+
+How could the search performance be improved?
+
+-Using engines such as Elasticsearch, which is designed for fast and efficient full-text searches.
+
+-Indexing the content column in the database would imporove results.
+
+-And caching could be used to cache frequently accessed results. A framework suitable for this is Redis.
+
