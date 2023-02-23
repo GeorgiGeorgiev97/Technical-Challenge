@@ -1,0 +1,4 @@
+fastapi
+uvicorn
+xmltodict
+psycopg2-binary
