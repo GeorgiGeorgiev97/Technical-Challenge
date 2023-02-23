@@ -69,6 +69,8 @@ To add a new article to the database, send a POST request to http://127.0.0.1:80
 Note that you should replace ARTICLE_ID, ARTICLE_TITLE, and ARTICLE_CONTENTS with the actual values for the article you want to add. The id field should be a unique identifier for the article, as no built-in verification is implemented.
 
 
+Note: There was an issue with connecting to the api inside the docker container and I believe it was due to some docker issues on my windows machine and was out of the scope of the task to spend so much time on this issue.
+
 
 Answer to Additional Questions:
 
