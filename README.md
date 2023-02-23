@@ -1,6 +1,4 @@
 # Technical-Challenge
-Wikipedia search engine
-This project provides a search engine for Wikipedia articles. It allows users to search for articles and also to add new articles to the database.
 
 Requirements
 To run this project, you will need to download a Wikipedia dump file in XML format. You can find the latest dumps at https://dumps.wikimedia.org/.
@@ -21,7 +19,7 @@ To run the project, follow these steps:
 Start the database: docker-compose up db
 Start the web server: docker-compose up web
 Start the API server: uvicorn api:app --reload
-You should now be able to create a POST Request at http://127.0.0.1:8000/search?search_query=KEYWORD using a tool like Postman.
+You should now be able to create a GET Request at http://127.0.0.1:8000/search?search_query=KEYWORD using a tool like Postman.
 
 To add a new article to the database, send a POST request to http://127.0.0.1:8000/wikipedia with a JSON body that looks like this:
 
