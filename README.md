@@ -42,7 +42,7 @@ Start the database: docker-compose up db
 Start the web server: docker-compose up web
 
 
-Start the API server: uvicorn api:app --reload
+Run: uvicorn api:app --reload
 
 
 You should now be able to create a GET Request at http://127.0.0.1:8000/search?search_query=KEYWORD using a tool like Postman.
